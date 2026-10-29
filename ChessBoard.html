@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Board</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center bg-black min-h-screen">
+
+  <!-- Chess Board -->
+  <div class="flex flex-col border-2 border-gray-800 ">
+    <!-- Board + coordinates -->
+    <!-- <div class="relative"> -->
+
+        <!-- Rank coordinates: 8 to 1 -->
+        <!-- <div class="absolute -left-6 top-0 h-[640px] flex flex-col">
+
+            <div class="h-[80px] flex items-center text-white">8</div>
+            <div class="h-[80px] flex items-center text-white">7</div>
+            <div class="h-[80px] flex items-center text-white">6</div>
+            <div class="h-[80px] flex items-center text-white">5</div>
+            <div class="h-[80px] flex items-center text-white">4</div>
+            <div class="h-[80px] flex items-center text-white">3</div>
+            <div class="h-[80px] flex items-center text-white">2</div>
+            <div class="h-[80px] flex items-center text-white">1</div>
+
+        </div> -->
+
+    <!-- Row 1: Black pieces -->
+     <!-- coordinate -->
+      <div class="flex">
+    <!-- Rank number -->
+    <div class="w-[30px] h-[80px] flex justify-center items-center text-white">
+        8
+    </div>
+     <!-- chess row -->
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl font-serif">&#x265C;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl font-serif">&#x265E;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl font-serif">&#x265D;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl font-serif">&#x265B;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl font-serif">&#x265A;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl font-serif">&#x265D;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl font-serif">&#x265E;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl font-serif">&#x265C;</div>
+    </div>
+
+    <!-- Row 2: Black pawns -->
+    <div class="flex">
+      <div class="w-[30px] h-[80px] flex justify-center items-center text-white">
+        7
+    </div>
+
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-black font-serif">&#9823;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-black font-serif">&#x265F;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-black font-serif">&#x265F;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-black font-serif">&#x265F;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-black font-serif">&#x265F;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-black font-serif">&#x265F;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-black font-serif">&#x265F;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-black font-serif">&#x265F;</div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="flex">
+    <div class="w-[30px] h-[80px] flex justify-center items-center text-white">
+        6
+    </div>
+
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="flex">
+      <div class="w-[30px] h-[80px] flex justify-center items-center text-white">
+        5
+    </div>
+
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+    </div>
+
+    <!-- Row 5 -->
+    <div class="flex">
+    <div class="w-[30px] h-[80px] flex justify-center items-center text-white">
+        4
+    </div>
+
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+    </div>
+
+    <!-- Row 6 -->
+    <div class="flex">
+      <div class="w-[30px] h-[80px] flex justify-center items-center text-white">
+        3
+    </div>
+
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+      <div class="w-[80px] h-[80px] bg-amber-800"></div>
+      <div class="w-[80px] h-[80px] bg-amber-100"></div>
+    </div>
+
+    <!-- Row 7: White pawns -->
+    <div class="flex">
+      <div class="w-[30px] h-[80px] flex justify-center items-center text-white">
+        2
+    </div>
+
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2659;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2659;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2659;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2659;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2659;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2659;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2659;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2659;</div>
+    </div>
+
+    <!-- Row 8: White pieces -->
+    <div class="flex">
+      <div class="w-[30px] h-[80px] flex justify-center items-center text-white">
+        1
+    </div>
+
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2656;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2658;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2657;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2655;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2654;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2657;</div>
+      <div class="w-[80px] h-[80px] bg-amber-800 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2658;</div>
+      <div class="w-[80px] h-[80px] bg-amber-100 flex justify-center items-center text-5xl text-white font-serif [text-shadow:2px_2px_2px_#000]">&#x2656;</div>
+    </div>
+
+      <!-- Coordinate row -->
+    <div class="flex">
+      <!-- Empty space for rank numbers -->
+    <div class="w-[30px] h-[30px]"></div>
+    
+        <div class="w-[80px] h-[30px] text-white flex justify-center items-center">a</div>
+        <div class="w-[80px] h-[30px] text-white flex justify-center items-center">b</div>
+        <div class="w-[80px] h-[30px] text-white flex justify-center items-center">c</div>
+        <div class="w-[80px] h-[30px] text-white flex justify-center items-center">d</div>
+        <div class="w-[80px] h-[30px] text-white flex justify-center items-center">e</div>
+        <div class="w-[80px] h-[30px] text-white flex justify-center items-center">f</div>
+        <div class="w-[80px] h-[30px] text-white flex justify-center items-center">g</div>
+        <div class="w-[80px] h-[30px] text-white flex justify-center items-center">h</div>
+
+     <!-- <div class="absolute left-0 top-[640px] w-[640px] flex">
+
+            <div class="w-[80px] text-center text-white">a</div>
+            <div class="w-[80px] text-center text-white">b</div>
+            <div class="w-[80px] text-center text-white">c</div>
+            <div class="w-[80px] text-center text-white">d</div>
+            <div class="w-[80px] text-center text-white">e</div>
+            <div class="w-[80px] text-center text-white">f</div>
+            <div class="w-[80px] text-center text-white">g</div>
+            <div class="w-[80px] text-center text-white">h</div>
+
+        </div> -->
+
+  </div>
+
+</body>
+</html>
